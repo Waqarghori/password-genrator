@@ -22,7 +22,6 @@ function passGenerator() {
     if (document.getElementById("specialChars").checked) {
         characters += specialChars;
     }
-    
     if (passwordLength === 0) {
         alert("Please select at least one character type!");
         return;
