@@ -13,25 +13,27 @@
     <div class="container-layer">
         <h1>Generate Password</h1>
         <div class="container">
-            <input type="number" placeholder="Enter Password Length">
+            <input type="number" id="pass-length" placeholder="Enter Password Length">
         </div>
         <div class="check-container">
             <div>
                 <h2>Add Charactors</h2>
             </div>
             <div class="checks">
-                <label for=""><input type="checkbox"> UpperCase</label>
-                <label for=""><input type="checkbox"> Numbers</label>
-                <label for=""><input type="checkbox"> Spacial Charactors</label>
+                <label for=""><input id="uppercase" type="checkbox"> UpperCase</label>
+                <label for=""><input id="numbers" type="checkbox"> Numbers</label>
+                <label for=""><input id="special-char" type="checkbox"> Spacial Charactors</label>
             </div>
         </div>
         <div class="btn">
-            <button id="generate">Generate</button>
+            <button id="generate" >Generate</button>
         </div>
         <div class="show-result">
-            <p id="result">jhjh</p>
+            <p id="result"></p>
         </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
