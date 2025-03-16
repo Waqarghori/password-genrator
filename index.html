@@ -4,38 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Generator</title>
     <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
 </head>
 
 <body>
 
-    <h1>Password Generator</h1>
-    <h2>Password Length</h2>
-
-    <input type="number" name="" placeholder="enter number for length" id="passLength">
-
-    <p id="printPass"></p>
-
-
-    <input type="checkbox" id="upperCase">
-    <label for="upperCase">Upper Case</label>
-
-    <input type="checkbox" id="lowerCase">
-    <label for="lowerCase">Lower Case</label>
-
-    <input type="checkbox" id="numbers">
-    <label for="numbers">Numbers</label>
-
-    <input type="checkbox" name="" id="specialChars">
-    <label for="specialChars">Special Character</label>
-</br>
-    <button onclick="passGenerator()">Generate Password</button>
-    <input type="text" id="password1" readonly>
-    <button onclick="clearPassword()">Clear</button>
-
-
-    <script src="app.js" ></script>
+    <div class="container-layer">
+        <h1>Generate Password</h1>
+        <div class="container">
+            <input type="number" placeholder="Enter Password Length">
+        </div>
+        <div class="check-container">
+            <div>
+                <h2>Add Charactors</h2>
+            </div>
+            <div class="checks">
+                <label for=""><input type="checkbox"> UpperCase</label>
+                <label for=""><input type="checkbox"> Numbers</label>
+                <label for=""><input type="checkbox"> Spacial Charactors</label>
+            </div>
+        </div>
+        <div class="btn">
+            <button id="generate">Generate</button>
+        </div>
+        <div class="show-result">
+            <p id="result">jhjh</p>
+        </div>
+    </div>
 </body>
 
 </html>
